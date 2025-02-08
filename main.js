@@ -42,7 +42,7 @@ function btn() {
         localStorage.clickcount = 1;
       }
 
-      document.getElementById("nr").innerHTML = localStorage.clear();
+      document.getElementById("nr").innerHTML = localStorage.clickcount;
     
 
 
