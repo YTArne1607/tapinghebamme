@@ -52,12 +52,6 @@ function btn() {
         alert("Es sind nicht alle Felder ausgefüllt!");
     } else if (vorname.value == "") {
         alert("Es sind nicht alle Felder ausgefüllt!");
-    } else if (strasse.value == "") {
-        alert("Es sind nicht alle Felder ausgefüllt!");
-    } else if (plz.value == "") {
-        alert("Es sind nicht alle Felder ausgefüllt!");
-    } else if (ort.value == "") {
-        alert("Es sind nicht alle Felder ausgefüllt!");
     } else {
         document.getElementById("main").style.display="none";
         document.getElementById("alles").style.display="block";
@@ -122,8 +116,7 @@ function btn() {
     }
 
     document.getElementById("name-erg").innerHTML = nachname.value + ", " + vorname.value;
-    document.getElementById("straße-erg").innerHTML = strasse.value;
-    document.getElementById("plz-ort-erg").innerHTML = plz.value + " " + ort.value;
+    
 
 
     /*document.getElementById("dtm1").innerHTML = datum1.value;
