@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taping Rechnung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+    <div class="container">
+        <h2>Taping Rechnung erstellen</h2>
+        <br>
+        <br>
+        <h3>Nachname: </h3><input type="text" id="tb-nachname" class="textbox">
+        <br>
+        <br> 
+        <h3>Vorname: </h3><input type="text" id="tb-vorname" class="textbox">
+        <br>
+        <br>
+        <h3>Straße & Hausnummer: </h3><input type="text" id="tb-straße" class="textbox">
+        <br>
+        <br>
+        <h3>PLZ: </h3><input type="text" id="tb-plz" class="textbox">
+        <br>
+        <br>
+        <h3>Ort: </h3><input type="text" id="tb-ort" class="textbox">
+        <br>
+        <h2>________________</h2>
+        <br>
+        <br>
+        <br>
+        <button onclick="btn()" class="btn1" id="button1">Rechnung erstellen</button>
+    </div>
+
+    <div class="datum-rng">
+        <h4>Datum & Betrag</h4>
+        <input type="text" id="datum1" class="textbox">
+        <br>
+        <input type="text" id="betrag1" class="textbox">
+        <br>
+        <br>
+        <input type="text" id="datum2" class="textbox">
+        <br>
+        <input type="text" id="betrag2" class="textbox">
+        <br>
+        <br>
+        <input type="text" id="datum3" class="textbox">
+        <br>
+        <input type="text" id="betrag3" class="textbox">
+        <br>
+        <br>
+        <input type="text" id="datum4" class="textbox">
+        <br>
+        <input type="text" id="betrag4" class="textbox">
+        <br>
+        <br>
+        <input type="text" id="datum5" class="textbox">
+        <br>
+        <input type="text" id="betrag5" class="textbox">
+        <br>
+        <br>
+        <input type="text" id="datum6" class="textbox">
+        <br>
+        <input type="text" id="betrag6" class="textbox">
+        <br>
+        <br>
+    </div>
+</div>
+
+    <div id="alles">
+    <div class="blattcon" id="blatt">
+        
+        <h3 id="h6OL" class="h6OL">
+            Flößerweg 6<br>78628 Rottweil<br>IK 450837034
+            <br>
+            <br>
+            <br>
+            Frau<br><label id="name-erg"></label><br><label id="straße-erg"></label><br><label id="plz-ort-erg"></label>
+            <br>
+            <br>
+            Rechnung Nr. <label id="nr"></label> / 2024
+            <br>
+            <br>
+            Taping in der Schwangerschaft
+        </h3>
+        <img src="logoheader_1024x123.jpeg" class="img-logo">
+    </div>
+
+    <div class="datum-con">
+        <h3 class="h5-con">
+        Datum
+        <br>
+        <br>
+        <label id="dtm1"></label>
+        <br>
+        <label id="dtm2"></label>
+        <br>
+        <label id="dtm3"></label>
+        <br>
+        <label id="dtm4"></label>
+        <br>
+        <label id="dtm5"></label>
+        <br>
+        <label id="dtm6"></label>
+        </h3>
+    </div>
+
+
+    <div class="betrag-con">
+        <h3 class="h5-con">
+        Betrag
+        <br>
+        <br>
+        <label id="btg1"></label>
+        <br>
+        <label id="btg2"></label>
+        <br>
+        <label id="btg3"></label>
+        <br>
+        <label id="btg4"></label>
+        <br>
+        <label id="btg5"></label>
+        <br>
+        <label id="btg6"></label>
+        </h3>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="h2-black"></h2>
+    <div id="bbe">
+        <h3>Betrag in Bar erhalten</h3>
+    </div>
+    <div class="gesamt">
+        <br>
+        <h3 class="h5-con">gesamt: <label id="gesamt"></label></h3>
+        <h2 id="h2-unter"></h2><h2 id="h2-unter2"></h2>
+    </div>
+
+    <div class="grau-main"></div>
+    <div class="grau1"></div>
+    <div class="grau2"></div>
+    <div class="grau3"></div>
+    
+</div>
+
+    <button id="btn-download">Download PDF</button>
+
+
+    
+
+
+    <script src="main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>
