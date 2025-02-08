@@ -42,7 +42,7 @@ function btn() {
         localStorage.clickcount = 1;
       }
 
-      document.getElementById("nr").innerHTML = localStorage.clickcount;
+      document.getElementById("nr").innerHTML = localStorage.clear();
     
 
 
@@ -116,7 +116,6 @@ function btn() {
     }
 
     document.getElementById("name-erg").innerHTML = nachname.value + ", " + vorname.value;
-    
 
 
     /*document.getElementById("dtm1").innerHTML = datum1.value;
